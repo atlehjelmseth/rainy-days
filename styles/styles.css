@@ -1,0 +1,79 @@
+body {
+  font-family: "verdana", serif;
+  font-size: 16pt;
+}
+
+h1 {
+  font-family: "museo-slab";
+  font-size: 28pt;
+}
+
+h2 {
+  font-family: "museo-slab";
+  font-size: 24pt;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+}
+header img {
+  width: 100%;
+  max-width: 200px;
+  text-align: left;
+}
+
+nav {
+  margin-left: 25px;
+  display: none;
+  position: fixed;
+  top: 120px;
+  background: #ffffff;
+  right: 0px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+  min-width: 100%;
+  min-height: 400px;
+  text-align: center;
+  border-bottom: solid;
+  border-top: solid;
+}
+
+header,
+footer {
+  background-color: #ffffff;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #0a3641;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 40px;
+}
