@@ -8,7 +8,7 @@
 body {
   font-family: "verdana", serif;
   margin: 0px;
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative;
   color: #0a3641;
 }
@@ -117,7 +117,6 @@ a {
 .main-page-content {
   max-width: 1000px;
   display: grid;
-  min-height: 70vh;
   grid-gap: 20px;
   padding: 10px;
 }
