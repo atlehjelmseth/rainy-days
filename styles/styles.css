@@ -1,7 +1,16 @@
+/* Global styles*/
+
+@font-face {
+  font-family: "verdana";
+  src: url("../fonts/verdana.ttf") format("truetype");
+}
+
 body {
   font-family: "verdana", serif;
-  font-size: 16pt;
   margin: 0px;
+  min-height: 70vh;
+  position: relative;
+  color: #0a3641;
 }
 
 h1 {
@@ -17,15 +26,17 @@ h2 {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0px 20px;
   border-bottom: solid;
   border-left: solid;
   border-right: solid;
   border-color: #0a3641;
 }
+
 header img {
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
   text-align: left;
   flex: 1;
 }
@@ -48,6 +59,11 @@ nav li {
   padding: 20px 30px;
 }
 
+.fa-shopping-cart {
+  color: #0a3641;
+  font-size: 25px;
+}
+
 #hamburger-menu {
   display: none;
 }
@@ -68,7 +84,14 @@ footer {
   background-color: #ffffff;
 }
 
-/* Links */
+footer {
+  background-color: #0a3641;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Links and buttons*/
 
 a {
   text-decoration: none;
@@ -81,4 +104,79 @@ a {
   text-transform: uppercase;
   border-radius: 20px;
   padding: 10px 40px;
+}
+
+.text-hyperlink {
+  font-size: 20pt;
+  font-weight: bold;
+  color: #ff8e26;
+}
+
+/* Home page */
+
+.main-page-content {
+  max-width: 1000px;
+  display: grid;
+  min-height: 70vh;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.main-page-images {
+  width: 100%;
+  border-radius: 10%;
+}
+
+/* Media q */
+
+@media (min-width: 600px) {
+  .main-page-content h1,
+  h2,
+  p2 {
+    grid-column: -1/1;
+  }
+
+  .main-page-content {
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: grid;
+    padding: 10px;
+  }
+  .main-page-images {
+    grid-column: 2;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 800px) {
+  .main-page-content h1,
+  h2,
+  p2 {
+    grid-column: -1/1;
+  }
+
+  .main-page-content {
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: grid;
+    padding: 10px;
+    max-width: inherit;
+  }
+  .main-page-images {
+    grid-column: 2;
+    border-radius: 10%;
+    max-width: 500px;
+    margin: auto;
+  }
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header label {
+    display: none;
+  }
 }
