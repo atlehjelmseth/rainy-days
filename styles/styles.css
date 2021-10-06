@@ -10,8 +10,8 @@ body {
   margin: 0px;
   min-height: 100vh;
   display: grid;
-  position: relative;
   color: #0a3641;
+  justify-content: center;
 }
 
 h1 {
@@ -115,8 +115,11 @@ a {
 
 /* Home page */
 
-.main-page-content {
+.main-page {
+  display: grid;
   max-width: 1000px;
+}
+.main-page-content {
   display: grid;
   grid-gap: 20px;
   padding: 10px;
@@ -155,8 +158,11 @@ a {
   }
 
   .main-page-content {
-    padding: 10px;
+    padding: 20px;
     min-height: 100vh;
+    border-left: solid;
+    border-right: solid;
+    border-color: #0a3641;
   }
   .main-page-images {
     grid-column: 2;
