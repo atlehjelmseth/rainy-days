@@ -72,7 +72,7 @@ nav li {
 #hamburger-menu:checked ~ nav {
   display: block;
   min-width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   text-align: center;
   border-bottom: solid;
   border-top: solid;
