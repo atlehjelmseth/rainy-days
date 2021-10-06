@@ -9,6 +9,7 @@ body {
   font-family: "verdana", serif;
   margin: 0px;
   min-height: 100vh;
+  display: grid;
   position: relative;
   color: #0a3641;
 }
@@ -137,8 +138,8 @@ a {
 
   .main-page-content {
     grid-template-columns: repeat(2, 1fr);
-    flex-direction: grid;
     padding: 10px;
+    min-height: 100vh;
   }
   .main-page-images {
     grid-column: 2;
@@ -154,10 +155,8 @@ a {
   }
 
   .main-page-content {
-    grid-template-columns: repeat(2, 1fr);
-    flex-direction: grid;
     padding: 10px;
-    max-width: inherit;
+    min-height: 100vh;
   }
   .main-page-images {
     grid-column: 2;
