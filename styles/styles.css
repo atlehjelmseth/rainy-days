@@ -12,6 +12,7 @@ body {
   display: grid;
   color: #0a3641;
   justify-content: center;
+  max-width: 1000px;
 }
 
 h1 {
@@ -31,6 +32,9 @@ header {
   padding: 10px 20px;
   border: solid;
   border-color: #0a3641;
+  position: fixed;
+  width: 100%;
+  max-width: 955px;
 }
 
 header img {
