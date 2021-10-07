@@ -59,15 +59,6 @@ nav li {
   margin: 4px;
 }
 
-.fa-bars {
-  font-size: 38px;
-}
-
-.fa-shopping-cart {
-  color: #0a3641;
-  font-size: 38px;
-}
-
 #hamburger-menu {
   display: none;
 }
@@ -120,6 +111,18 @@ a {
   color: #ff8e26;
 }
 
+.fa-bars {
+  font-size: 38px;
+}
+
+.fa-shopping-cart {
+  color: #0a3641;
+  font-size: 38px;
+}
+
+.fa-shopping-cart:hover {
+  color: #23778c;
+}
 /* Home page */
 
 .main-page {
