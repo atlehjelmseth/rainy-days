@@ -63,12 +63,12 @@ nav li {
 }
 
 .fa-bars {
-  font-size: 39px;
+  font-size: 38px;
 }
 
 .fa-shopping-cart {
   color: #0a3641;
-  font-size: 39px;
+  font-size: 38px;
 }
 
 #hamburger-menu {
@@ -110,7 +110,7 @@ a {
   font-size: 1em;
   text-transform: uppercase;
   border-radius: 20px;
-  padding: 10px 40px;
+  padding: 10px 38px;
 }
 
 .text-hyperlink {
@@ -184,6 +184,7 @@ a {
   nav li {
     display: inline-block;
     padding: 0px;
+    vertical-align: middle;
   }
 
   header label {
