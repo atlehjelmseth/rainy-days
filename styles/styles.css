@@ -113,6 +113,10 @@ a {
   padding: 10px 38px;
 }
 
+.button:hover {
+  background-color: #23778c;
+}
+
 .text-hyperlink {
   font-size: 20pt;
   font-weight: bold;
