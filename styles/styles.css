@@ -28,10 +28,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 10px 20px;
   border-bottom: solid;
   border-left: solid;
   border-right: solid;
+  border-top: solid;
   border-color: #0a3641;
 }
 
@@ -58,6 +59,11 @@ nav ul {
 nav li {
   display: block;
   padding: 20px 30px;
+  margin: 4px;
+}
+
+.fa-bars {
+  font-size: 25px;
 }
 
 .fa-shopping-cart {
