@@ -158,6 +158,14 @@ a {
 }
 
 @media (min-width: 800px) {
+  main {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 57px;
+  }
+
   .main-page-content h1,
   h2,
   p2 {
