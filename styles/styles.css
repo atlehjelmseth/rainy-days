@@ -31,6 +31,7 @@ header {
   padding: 10px 20px;
   border: solid;
   border-color: #0a3641;
+  max-height: 110px;
 }
 
 header img {
@@ -128,7 +129,6 @@ a {
 /* Home page */
 
 .main-page {
-  display: grid;
   max-width: 1000px;
 }
 .main-page-content {
@@ -140,6 +140,8 @@ a {
 .main-page-images {
   width: 100%;
   border-radius: 10%;
+  max-width: 500px;
+  margin: auto;
 }
 
 /* Media queries */
@@ -176,10 +178,7 @@ a {
     border-right: solid;
     border-color: #0a3641;
   }
-  .main-page-images {
-    max-width: 500px;
-    margin: auto;
-  }
+
   nav {
     display: block;
     position: static;
