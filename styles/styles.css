@@ -40,6 +40,19 @@ header img {
   flex: 1;
 }
 
+header {
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #0a3641;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigation*/
+
 nav {
   margin-left: 25px;
   display: none;
@@ -72,18 +85,6 @@ nav li {
   border-top: solid;
   border-color: #0a3641;
   position: fixed;
-}
-
-header,
-footer {
-  background-color: #ffffff;
-}
-
-footer {
-  background-color: #0a3641;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
 }
 
 /* Links and buttons*/
@@ -123,6 +124,7 @@ a {
 .fa-shopping-cart:hover {
   color: #23778c;
 }
+
 /* Home page */
 
 .main-page {
@@ -151,8 +153,7 @@ a {
 
   .main-page-content {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-    min-height: 100vh;
+    padding: 20px;
   }
   .main-page-images {
     grid-column: 2;
@@ -170,22 +171,12 @@ a {
     text-align: center;
   }
 
-  .main-page-content h1,
-  h2,
-  p2 {
-    grid-column: -1/1;
-  }
-
   .main-page-content {
-    padding: 20px;
-    min-height: 100vh;
     border-left: solid;
     border-right: solid;
     border-color: #0a3641;
   }
   .main-page-images {
-    grid-column: 2;
-    border-radius: 10%;
     max-width: 500px;
     margin: auto;
   }
