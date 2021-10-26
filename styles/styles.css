@@ -1,7 +1,7 @@
 /* Global styles*/
 
 @font-face {
-  font-family: "verdana";
+  font-family: "verdana", serif;
   src: url("../fonts/verdana.ttf") format("truetype");
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 h1 {
-  font-family: "museo-slab";
+  font-family: "museo-slab", serif;
   font-size: 28pt;
 }
 
 h2 {
-  font-family: "museo-slab";
+  font-family: "museo-slab", serif;
   font-size: 24pt;
 }
 
@@ -229,10 +229,21 @@ a {
   max-width: 1200px;
 }
 
+.form-wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 /* Contact us */
 
 .contact-us {
-  padding: 10px;
+  padding: 20px;
 }
 
 .contact-us img {
@@ -252,19 +263,27 @@ textarea {
   min-height: 400px;
 }
 
-.form-wrapper {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-}
-
-.form-wrapper > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
 /* Product page */
+
+.productpage {
+  padding: 20px;
+}
+
+.price-cta-section p {
+  font-family: "museo-slab";
+  font-size: 5em;
+  font-weight: bolder;
+  color: #ff8e26;
+  margin: 0px;
+}
+
+.price-cta-section {
+  text-align: center;
+}
+
+.contact-us-content {
+  text-align: center;
+}
 
 /* Media queries */
 
@@ -320,17 +339,8 @@ textarea {
     min-height: 90vh;
   }
 
-  .productpage .cta-button {
-    grid-column: 2;
-  }
   .productpage h1 {
     grid-column: -1/1;
-  }
-
-  .productpage img {
-    display: table-row;
-    padding-top: 10px;
-    max-width: 450px;
   }
 }
 
