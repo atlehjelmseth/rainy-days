@@ -139,7 +139,7 @@ a {
   font-weight: bold;
   color: #ff8e26;
   text-transform: uppercase;
-  text-shadow: 1px 1px black;
+  background: black;
 }
 
 .fa-bars {
