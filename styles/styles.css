@@ -66,6 +66,7 @@ img {
   display: grid;
   min-height: 95vh;
 }
+
 /* Navigation*/
 
 nav {
@@ -133,24 +134,12 @@ a {
   max-height: 50px;
 }
 
-.button:hover {
-  background-color: #23778c;
-}
-
-.cta-button:hover {
-  background-color: #ffffff;
-  color: #ff8e26;
-}
-
-.active {
-  background-color: #23778c;
-}
-
 .text-hyperlink {
   font-size: 20pt;
   font-weight: bold;
   color: #ff8e26;
   text-transform: uppercase;
+  text-shadow: 1px 1px black;
 }
 
 .fa-bars {
@@ -164,6 +153,23 @@ a {
 
 .fa-shopping-cart:hover {
   color: #23778c;
+}
+
+.active-icon {
+  color: #23778c;
+}
+
+.active {
+  background-color: #23778c;
+}
+
+.button:hover {
+  background-color: #23778c;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #ff8e26;
 }
 
 /* Home page */
