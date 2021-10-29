@@ -143,6 +143,7 @@ a {
   background-color: #ff8e26;
   color: #0a3641;
   font-size: 1em;
+  font-weight: 800;
   text-transform: uppercase;
   border-radius: 20px;
   padding: 10px 34px;
@@ -288,6 +289,10 @@ a {
   padding: 20px;
 }
 
+.contact-us-pictures {
+  margin: auto;
+}
+
 .contact-us img {
   display: none;
 }
@@ -314,7 +319,7 @@ textarea {
 .price-cta-section p {
   font-family: "museo-slab";
   font-size: 6em;
-  font-weight: bolder;
+  font-weight: 800;
   color: green;
   margin: 0px;
 }
@@ -355,10 +360,6 @@ textarea {
     min-height: 90vh;
   }
 
-  .contact-us h1 {
-    grid-column: -1/1;
-  }
-
   .contact-us img {
     display: table-row;
     padding-top: 10px;
@@ -378,7 +379,7 @@ textarea {
   }
 
   h1 {
-    font-size: 57px;
+    font-size: 55px;
     text-align: center;
     font-weight: 800;
   }
