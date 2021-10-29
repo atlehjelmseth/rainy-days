@@ -141,21 +141,31 @@ a {
 .cta-button {
   font-family: "museo-slab", serif;
   background-color: #ff8e26;
-  color: #ffffff;
+  color: #0a3641;
   font-size: 1em;
   text-transform: uppercase;
   border-radius: 20px;
-  padding: 10px 38px;
+  padding: 10px 34px;
   max-width: 210px;
   max-height: 50px;
+  border: #0a3641;
+  border-style: solid;
+  text-align: center;
 }
 
 .text-hyperlink {
   font-size: 20pt;
   font-weight: bold;
-  color: #ff8e26;
+  color: #23778c;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.jackets-hyperlink {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff8e26;
+  text-transform: uppercase;
 }
 
 .fa-bars {
@@ -181,11 +191,13 @@ a {
 
 .button:hover {
   background-color: #23778c;
+  cursor: pointer;
 }
 
 .cta-button:hover {
   background-color: #ffffff;
-  color: #ff8e26;
+  color: #0a3641;
+  cursor: pointer;
 }
 
 /* Home page */
@@ -301,11 +313,10 @@ textarea {
 
 .price-cta-section p {
   font-family: "museo-slab";
-  font-size: 5em;
+  font-size: 6em;
   font-weight: bolder;
-  color: #ff8e26;
+  color: green;
   margin: 0px;
-  text-shadow: 3px 3px black;
 }
 
 .price-cta-section,
@@ -313,32 +324,29 @@ textarea {
   text-align: center;
 }
 
+#size {
+  border: #0a3641;
+  border-style: solid;
+  width: 150px;
+  text-align: center;
+}
+
 /* Media queries */
 
 @media (min-width: 600px) {
-  .main-page-content h1,
-  h2,
-  bottom-text {
-    grid-column: -1/1;
-  }
-
-  .main-page-content {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-  }
-  .main-page-images {
-    grid-column: 2;
-  }
-
-  .jackets-content h1,
+  h1,
   h2,
   .bottom-text {
     grid-column: -1/1;
   }
 
+  .main-page-content,
   .jackets-content {
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
+  }
+  .main-page-images {
+    grid-column: 2;
   }
 
   .contact-us {
@@ -347,10 +355,6 @@ textarea {
     min-height: 90vh;
   }
 
-  .contact-us .button {
-    grid-column: 1;
-    max-height: 50px;
-  }
   .contact-us h1 {
     grid-column: -1/1;
   }
@@ -358,17 +362,13 @@ textarea {
   .contact-us img {
     display: table-row;
     padding-top: 10px;
-    max-width: 450px;
+    max-width: 470px;
   }
 
   .productpage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 90vh;
-  }
-
-  .productpage h1 {
-    grid-column: -1/1;
   }
 }
 
@@ -382,7 +382,11 @@ textarea {
     text-align: center;
   }
 
-  .main-page-content {
+  .main-page-content,
+  .inspiration-content,
+  .contact-us,
+  .checkout-content,
+  .productpage {
     border-left: solid;
     border-right: solid;
     border-color: #0a3641;
@@ -391,24 +395,6 @@ textarea {
   .jackets-content {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
-    border-left: solid;
-    border-right: solid;
-    border-color: #0a3641;
-  }
-
-  .inspiration-content {
-    border-left: solid;
-    border-right: solid;
-    border-color: #0a3641;
-  }
-
-  .contact-us {
-    border-left: solid;
-    border-right: solid;
-    border-color: #0a3641;
-  }
-
-  .productpage {
     border-left: solid;
     border-right: solid;
     border-color: #0a3641;
