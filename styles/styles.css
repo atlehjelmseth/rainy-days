@@ -1,5 +1,7 @@
 /* Global styles*/
 
+@import "variables.css";
+
 @font-face {
   font-family: "verdana", serif;
   src: url("../fonts/verdana.ttf") format("truetype");
@@ -8,7 +10,7 @@
 body {
   font-family: "verdana", serif;
   display: flex;
-  color: #0a3641;
+  color: var(--main-color-blue);
   flex-direction: column;
   width: 100%;
   margin: auto;
@@ -34,12 +36,11 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
   border: solid;
-  border-color: #0a3641;
+  border-color: var(--main-color-blue);
   max-height: 110px;
 }
 
 header img {
-  width: 100%;
   max-width: 150px;
   text-align: left;
   flex: 1;
@@ -50,7 +51,7 @@ header {
 }
 
 footer {
-  background-color: #0a3641;
+  background-color: var(--main-color-blue);
   color: #ffffff;
   padding: 10px;
   text-align: center;
@@ -116,7 +117,7 @@ nav li {
   text-align: center;
   border-bottom: solid;
   border-top: solid;
-  border-color: #0a3641;
+  border-color: var(--main-color-blue);
   position: fixed;
   z-index: 1;
 }
@@ -129,7 +130,7 @@ a {
 
 .button {
   font-family: "museo-slab", serif;
-  background-color: #0a3641;
+  background-color: var(--main-color-blue);
   color: #ffffff;
   font-size: 1em;
   text-transform: uppercase;
@@ -141,7 +142,7 @@ a {
 .cta-button {
   font-family: "museo-slab", serif;
   background-color: #ff8e26;
-  color: #0a3641;
+  color: var(--main-color-blue);
   font-size: 1em;
   font-weight: 800;
   text-transform: uppercase;
@@ -149,7 +150,7 @@ a {
   padding: 10px 34px;
   max-width: 210px;
   max-height: 50px;
-  border: #0a3641;
+  border: var(--main-color-blue);
   border-style: solid;
   text-align: center;
 }
@@ -174,7 +175,7 @@ a {
 }
 
 .fa-shopping-cart {
-  color: #0a3641;
+  color: var(--main-color-blue);
   font-size: 38px;
 }
 
@@ -197,7 +198,7 @@ a {
 
 .cta-button:hover {
   background-color: #ffffff;
-  color: #0a3641;
+  color: var(--main-color-blue);
   cursor: pointer;
 }
 
@@ -326,7 +327,7 @@ textarea {
 }
 
 #size {
-  border: #0a3641;
+  border: var(--main-color-blue);
   border-style: solid;
   width: 150px;
   text-align: center;
@@ -387,7 +388,7 @@ textarea {
   .productpage {
     border-left: solid;
     border-right: solid;
-    border-color: #0a3641;
+    border-color: var(--main-color-blue);
   }
 
   .jackets-content {
@@ -395,7 +396,7 @@ textarea {
     padding: 20px;
     border-left: solid;
     border-right: solid;
-    border-color: #0a3641;
+    border-color: var(--main-color-blue);
   }
 
   nav {
