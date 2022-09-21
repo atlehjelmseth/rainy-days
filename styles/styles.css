@@ -16,6 +16,7 @@ body {
   margin: auto;
   max-width: 1200px;
   min-height: 100vh;
+  background-color:var(--main-color-grey);
 }
 
 main {
@@ -23,6 +24,7 @@ main {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
+  background-color: white;
 }
 
 h1 {
@@ -35,8 +37,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  border: solid;
-  border-color: var(--main-color-blue);
+
   max-height: 110px;
 }
 
@@ -208,6 +209,36 @@ a {
   display: grid;
   grid-gap: 10px;
   padding: 10px;
+
+}
+
+.front-section {
+  background-image: url(/images/girl-1561989_1920.jpg);
+  background-position: center;
+  min-height: 600px;
+  max-width: 1200px;
+}
+
+.call-to-action-front {
+  display: flex;
+  margin: 150px auto;
+  bottom: 50%;
+  background-color: var(--main-color-blue);
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 37px;
+
+}
+
+.call-to-action-front a {
+  text-decoration: none;
+  color: white;
+}
+
+.call-to-action-front:hover {
+  box-shadow: #ff8e26;
 }
 
 /* Jackets */
@@ -379,16 +410,6 @@ textarea {
     font-size: 55px;
     text-align: center;
     font-weight: 800;
-  }
-
-  .main-page-content,
-  .inspiration-content,
-  .contact-us,
-  .checkout-content,
-  .productpage {
-    border-left: solid;
-    border-right: solid;
-    border-color: var(--main-color-blue);
   }
 
   .jackets-content {
