@@ -415,9 +415,7 @@ textarea {
   .jackets-content {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
-    border-left: solid;
-    border-right: solid;
-    border-color: var(--main-color-blue);
+
   }
 
   nav {
