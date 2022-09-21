@@ -37,8 +37,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-
   max-height: 110px;
+  border-bottom: solid 1px black;
+
 }
 
 header img {
