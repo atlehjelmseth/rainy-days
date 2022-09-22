@@ -213,7 +213,7 @@ a {
 }
 
 .front-section {
-  background-image: url(/images/girl-1561989_1920.jpg);
+  background-image: url(/images/front_image.jpg);
   background-position: center;
   min-height: 600px;
   max-width: 1200px;
@@ -410,12 +410,6 @@ textarea {
     font-size: 55px;
     text-align: center;
     font-weight: 800;
-  }
-
-  .jackets-content {
-    grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-
   }
 
   nav {
