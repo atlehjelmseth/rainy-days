@@ -2,11 +2,6 @@
 
 @import "variables.css";
 
-@font-face {
-  font-family: "verdana", serif;
-  src: url("../fonts/verdana.ttf") format("truetype");
-}
-
 body {
   font-family: "verdana", serif;
   display: flex;
@@ -35,10 +30,14 @@ h1 {
 header {
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
   justify-content: space-between;
-  padding: 10px 20px;
+
   max-height: 110px;
-  border-bottom: solid 1px black;
+  box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+  z-index: 1;
 }
 
 header img {
@@ -49,6 +48,10 @@ header img {
 
 header {
   background-color: #ffffff;
+}
+
+.logo {
+  margin: 10px 25px 10px 25px;
 }
 
 footer {
@@ -69,6 +72,7 @@ img {
 .main-page {
   display: grid;
   min-height: 95vh;
+  margin-top: 100px;
 }
 
 /* Animations - Global */
@@ -89,7 +93,7 @@ img {
 
 nav {
   font-family: "museo-slab", serif;
-  margin-left: 25px;
+  margin: 0 25px 0 25px;
   display: none;
   position: fixed;
   top: 0px;
@@ -121,6 +125,7 @@ nav li {
   border-color: var(--main-color-blue);
   position: fixed;
   z-index: 1;
+  margin: 0;
 }
 
 /* Links and buttons*/
@@ -173,6 +178,7 @@ a {
 
 .fa-bars {
   font-size: 38px;
+  margin-right: 15px;
 }
 
 .fa-shopping-cart {
@@ -214,31 +220,38 @@ a {
 
 .front-section {
   background-image: url(/images/front_image.jpg);
-  background-position: center;
-  min-height: 600px;
+  background-position: right bottom;
+  background-size: cover;
+
+  min-height: 300px;
   max-width: 1200px;
 }
 
 .call-to-action-front {
-  display: flex;
-  margin: 150px auto;
-  bottom: 50%;
+  display: block;
+  margin: 200px auto;
   background-color: var(--main-color-blue);
   color: #ffffff;
   font-size: 1em;
   text-transform: uppercase;
   border-radius: 20px;
   padding: 10px 37px;
-
+  max-width: 250px;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgb(255, 255, 255);
 }
 
 .call-to-action-front a {
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
 .call-to-action-front:hover {
   box-shadow: #ff8e26;
+  background-color: #23778c;
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 100%);
 }
 
 /* Jackets */
@@ -319,6 +332,7 @@ a {
 
 .contact-us {
   padding: 20px;
+  margin-top: 100px;
 }
 
 .contact-us img {
@@ -342,6 +356,7 @@ textarea {
 
 .productpage {
   padding: 20px;
+  margin-top: 100px;
 }
 
 .price-cta-section p {
@@ -401,7 +416,7 @@ textarea {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 830px) {
   main {
     font-size: 20px;
   }
@@ -425,5 +440,9 @@ textarea {
 
   header label {
     display: none;
+  }
+
+  .front-section {
+    min-height: 600px;
   }
 }
