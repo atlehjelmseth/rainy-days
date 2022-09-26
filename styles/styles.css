@@ -189,7 +189,7 @@ a {
 
 .fa-shopping-cart {
   color: var(--main-color-blue);
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .fa-shopping-cart:hover {
@@ -425,6 +425,14 @@ textarea {
   border-style: solid;
   width: 150px;
   text-align: center;
+}
+
+.fa-shopping-cart span {
+  position: absolute;
+  top: 42px;
+  right: 36px;
+  font-size: 13px;
+  color: white;
 }
 
 /* Media queries */

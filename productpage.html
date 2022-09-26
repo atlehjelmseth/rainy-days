@@ -32,8 +32,8 @@
           <li><a href="contact.html" class="button">contact</a></li>
           <li>
             <a href="checkout.html" aria-label="shopping-cart"
-              ><i class="fas fa-shopping-cart"></i
-            ></a>
+              ><i class="fas fa-shopping-cart"><span>0</span></i></a
+            >
           </li>
         </ul>
       </nav>
@@ -42,7 +42,7 @@
       <h1>RainyDays winter jacket</h1>
 
       <img src="images/jacket1.png" alt="Picture of grey winter jacket" />
-      <form method="GET">
+      <form>
         <div class="contact-us-content"></div>
         <div class="price-cta-section">
           <p>299$</p>
@@ -55,8 +55,8 @@
                 <option value="Large jacket">Large</option>
               </select>
             </label>
+            <a class="add_to_cart button-contact">add to cart</a>
           </div>
-          <input type="submit" value="add to cart" class="cta-button" />
         </div>
       </form>
       <p class="bottom-text">
@@ -64,6 +64,7 @@
         00<br />All rights reserved.
       </p>
     </main>
+    <script src="/js/cart.js"></script>
     <footer>Copyright &copy;</footer>
   </body>
 </html>
