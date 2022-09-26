@@ -115,6 +115,10 @@ nav li {
   display: none;
 }
 
+header label {
+  z-index: 2;
+}
+
 #hamburger-menu:checked ~ nav {
   display: block;
   min-width: 100%;
@@ -122,6 +126,7 @@ nav li {
   text-align: center;
   position: fixed;
   margin: 0;
+  padding-top: 50%;
 }
 
 /* Links and buttons*/
@@ -175,6 +180,7 @@ a {
 .fa-bars {
   font-size: 38px;
   margin-right: 15px;
+  z-index: 2;
 }
 
 .fa-shopping-cart {
