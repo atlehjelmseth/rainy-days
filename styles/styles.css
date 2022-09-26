@@ -321,6 +321,7 @@ a {
   display: flex;
   text-align: left;
   flex-direction: column;
+
 }
 
 .form-wrapper > * {
@@ -339,6 +340,7 @@ a {
   display: none;
 }
 
+
 input,
 select,
 textarea {
@@ -346,11 +348,48 @@ textarea {
   border-radius: 10px;
   margin: 10px 10px 10px 0px;
   padding: 10px;
+  width: 90%;
 }
 
 textarea {
   min-height: 400px;
 }
+
+
+.button-contact {
+  display: block;
+  background: green;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border:none;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: ease-out 0.1s;
+}
+
+.button-kontakt:hover {
+  color: green;
+  border: solid 1px;
+  border-color: green;
+}
+
+.formError {
+  display: none;
+  color:red;
+  font-size: 1.125rem;
+}
+
+.success {
+  text-align: center;
+  color: green;
+  font-size: 1.5rem;
+  display: none;
+}
+
+
 
 /* Product page */
 

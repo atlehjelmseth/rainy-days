@@ -56,16 +56,41 @@
     <main class="contact-us">
       <h1>Contact us!</h1>
       <section class="contact-us-content">
-        <form method="GET">
-          <div class="form-wrapper">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" />
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+        <form id="contactForm">
+          <div class="label">
+            <label>
+              <input name="name" id="name" placeholder="Full name" />
+            </label>
+            <div class="formError" id="nameError">Please enter your name</div>
           </div>
-          <input type="submit" value="Send Now" class="button" />
+          <div class="label">
+            <label>
+              <input name="mobile" id="mobile" placeholder="Mobile number" />
+            </label>
+            <div class="formError" id="mobileError">
+              Please enter your mobile number
+            </div>
+          </div>
+          <div class="label">
+            <label>
+              <input name="email" id="email" placeholder="Email" />
+            </label>
+            <div class="formError" id="emailError">Please enter your email</div>
+          </div>
+          <div class="label">
+            <label>
+              <textarea
+                name="subject"
+                id="subject"
+                placeholder="Please enter your request"
+              ></textarea>
+            </label>
+            <div class="formError" id="subjectError">
+              Please enter your message
+            </div>
+            <p class="success">Your message is sendt!</p>
+            <button class="button-contact">Send</button>
+          </div>
         </form>
       </section>
       <section class="contact-us-pictures">
@@ -83,6 +108,7 @@
         00<br />All rights reserved.
       </p>
     </main>
+    <script src="/js/contact.js"></script>
     <footer>Copyright &copy;</footer>
   </body>
 </html>
