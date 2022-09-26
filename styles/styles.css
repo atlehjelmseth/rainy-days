@@ -118,13 +118,9 @@ nav li {
 #hamburger-menu:checked ~ nav {
   display: block;
   min-width: 100%;
-  min-height: 300px;
+  min-height: 100%;
   text-align: center;
-  border-bottom: solid;
-  border-top: solid;
-  border-color: var(--main-color-blue);
   position: fixed;
-  z-index: 1;
   margin: 0;
 }
 
