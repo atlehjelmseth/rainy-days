@@ -274,13 +274,13 @@ a {
   display: block;
   position: absolute;
   width: 100%;
-  top: 75%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(10, 54, 65, 0.8);
 }
 
-.background-color-jackets:hover {
+.products:hover .background-color-jackets{
   background-color: #23778c;
 }
 
