@@ -1,4 +1,5 @@
 const cart = document.querySelectorAll(".add_to_cart");
+const clearCart = document.querySelectorAll(".clear_cart");
 
 
 for (let i=0; i < cart.length; i++) {
@@ -18,14 +19,29 @@ function numberOfProducts() {
 function cartNumber() {
   let jacketNumber = localStorage.getItem('cartNumber');
 
-  jacketNumber = parseInt(jacketNumber)
+  jacketNumber = parseInt(jacketNumber);
 
   if (jacketNumber){
     localStorage.setItem('cartNumber', jacketNumber + 1);
     document.querySelector('.fa-shopping-cart span').textContent = jacketNumber + 1;
   } else {
-    localStorage.setItem('cartNumber', 1);};
-    document.querySelector('.fa-shopping-cart span').textContent + 1;
+    localStorage.setItem('cartNumber', 1);
+    document.querySelector('.fa-shopping-cart span').textContent = 1;
+  };
 }
 
+
+
+
 numberOfProducts()
+
+for (let i=0; i < clearCart.length; i++) {
+  clearCart[i].addEventListener('click', () => {
+    clearOut()
+  })
+}
+
+function clearOut() {
+  localStorage.clear();
+  document.querySelector('.fa-shopping-cart span').textContent = 0;
+}
