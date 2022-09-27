@@ -249,7 +249,6 @@ a {
 }
 
 .call-to-action-front:hover {
-  box-shadow: #ff8e26;
   background-color: #23778c;
   box-shadow: 0px 5px 10px rgb(0 0 0 / 100%);
 }
@@ -308,6 +307,26 @@ a {
   color: white;
 }
 
+.proceed-to-checkout {
+  display: block;
+  margin:  auto;
+  background-color: var(--main-color-blue);
+  color: #ffffff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 20px 37px;
+  max-width: 250px;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgb(255, 255, 255);
+}
+
+.proceed-to-checkout:hover {
+  background-color: #23778c;
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 100%);
+}
+
 /* Inspiration */
 .inspiration-content {
   padding: 20px;
@@ -360,7 +379,7 @@ textarea {
   display: block;
   background: green;
   color: white;
-  width: 200px;
+  width: 280px;
   height: 40px;
   font-size: 1.2rem;
   border-radius: 10px;
@@ -368,6 +387,8 @@ textarea {
   cursor: pointer;
   margin: 20px auto;
   transition: ease-out 0.1s;
+  text-align: center;
+  text-transform:uppercase;
 }
 
 .button-kontakt:hover {
@@ -428,6 +449,21 @@ textarea {
   font-size: 13px;
   color: white;
 }
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px;
+}
+
+.product-header p {
+  margin: 15px ;
+}
+
+.jacket-title {
+  width: 40%;
+}
+
 
 /* Media queries */
 
