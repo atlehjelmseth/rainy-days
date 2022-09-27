@@ -36,22 +36,22 @@
       <a href="index.html" class="logo">
         <img src="images/RainyDays_Logo.png" alt="RainyDays logo" />
       </a>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" aria-label="menu" />
       <nav>
         <ul>
-          <li><a href="jackets.html" class="button active">jackets</a></li>
+          <li><a href="jackets.html" class="button">jackets</a></li>
           <li>
             <a href="inspiration.html" class="button">inspiration</a>
           </li>
           <li><a href="contact.html" class="button">contact</a></li>
-          <li>
-            <a href="checkout.html" aria-label="shopping-cart"
-              ><i class="fas fa-shopping-cart active-icon"><span>0</span></i></a
-            >
-          </li>
+          <li></li>
         </ul>
       </nav>
+      <div class="cart_and_hamburger">
+        <a href="checkout.html" aria-label="shopping-cart"
+          ><i class="fas fa-shopping-cart active-icon"><p>0</p></i></a
+        >
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      </div>
     </header>
     <main class="main-page">
       <section class="checkout-content">
@@ -60,6 +60,7 @@
         <p>Please add your jacket(s) to continue</p>
       </section>
     </main>
+    <script src="/js/script.js"></script>
     <script src="/js/cart.js"></script>
     <footer>Copyright &copy;</footer>
   </body>

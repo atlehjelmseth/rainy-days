@@ -36,8 +36,6 @@
       <a href="index.html" class="logo">
         <img src="images/RainyDays_Logo.png" alt="RainyDays logo" />
       </a>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" aria-label="menu" />
       <nav>
         <ul>
           <li><a href="jackets.html" class="button active">jackets</a></li>
@@ -45,18 +43,20 @@
             <a href="inspiration.html" class="button">inspiration</a>
           </li>
           <li><a href="contact.html" class="button">contact</a></li>
-          <li>
-            <a href="checkout.html" aria-label="shopping-cart"
-              ><i class="fas fa-shopping-cart"></i
-            ></a>
-          </li>
+          <li></li>
         </ul>
       </nav>
+      <div class="cart_and_hamburger">
+        <a href="checkout.html" aria-label="shopping-cart"
+          ><i class="fas fa-shopping-cart"><p>0</p></i></a
+        >
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      </div>
     </header>
     <main class="main-page">
       <section class="jackets-content">
         <h1>Our jackets!</h1>
-        <a href="productpage.html" class="products">
+        <a href="#" class="products add_to_cart greyjacket">
           <img
             src="images/jacket1.png"
             class="jacket-pictures"
@@ -65,10 +65,10 @@
           <div class="background-color-jackets">
             <div class="product-name">Jacket Grey</div>
             <div class="price">299$</div>
-            <div class="jackets-hyperlink">shop now!</div>
+            <div class="jackets-hyperlink">add to cart!</div>
           </div>
         </a>
-        <a href="productpage.html" class="products">
+        <a href="#" class="products add_to_cart redjacket">
           <img
             src="images/jacket2.png"
             class="jacket-pictures"
@@ -78,10 +78,10 @@
             <div class="product-name">Jacket Red</div>
             <div class="old-price">299$</div>
             <div class="price">199$</div>
-            <div class="jackets-hyperlink">shop now!</div>
+            <div class="jackets-hyperlink">add to cart!</div>
           </div>
         </a>
-        <a href="productpage.html" class="products">
+        <a href="#" class="products add_to_cart bluejacket">
           <img
             src="images/jacket3.png"
             class="jacket-pictures"
@@ -90,10 +90,10 @@
           <div class="background-color-jackets">
             <div class="product-name">Jacket Blue</div>
             <div class="price">299$</div>
-            <div class="jackets-hyperlink">shop now!</div>
+            <div class="jackets-hyperlink">add to cart!</div>
           </div>
         </a>
-        <a href="productpage.html" class="products">
+        <a href="#" class="products add_to_cart yellowjacket">
           <img
             src="images/jacket4.png"
             class="jacket-pictures"
@@ -102,11 +102,13 @@
           <div class="background-color-jackets">
             <div class="product-name">Jacket Yellow</div>
             <div class="price">299$</div>
-            <div class="jackets-hyperlink">shop now!</div>
+            <div class="jackets-hyperlink">add to cart!</div>
           </div>
         </a>
       </section>
     </main>
+    <script src="/js/script.js"></script>
+    <script src="/js/cart.js"></script>
     <footer>Copyright &copy;</footer>
   </body>
 </html>

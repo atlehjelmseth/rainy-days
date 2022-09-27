@@ -37,17 +37,16 @@ header {
   max-height: 110px;
   box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
   z-index: 1;
+  background-color: #ffffff;
 }
 
 header img {
-  max-width: 150px;
+  width: 150px;
   text-align: left;
   flex: 1;
 }
 
-header {
-  background-color: #ffffff;
-}
+
 
 .logo {
   margin: 10px 25px 10px 25px;
@@ -93,16 +92,20 @@ img {
 
 nav {
   font-family: "museo-slab", serif;
-  margin: 0 25px 0 25px;
+  margin: 100px 0px 0px 0px;
   display: none;
   position: fixed;
   top: 0px;
   background: #ffffff;
-  right: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  
 }
 
 nav ul {
   padding: 0px;
+  margin-top: 50px;
 }
 
 nav li {
@@ -111,23 +114,13 @@ nav li {
   margin: 4px;
 }
 
-#hamburger-menu {
-  display: none;
-}
+
 
 header label {
   z-index: 2;
 }
 
-#hamburger-menu:checked ~ nav {
-  display: block;
-  min-width: 100%;
-  min-height: 100%;
-  text-align: center;
-  position: fixed;
-  margin: 0;
-  padding-top: 30%;
-}
+
 
 /* Links and buttons*/
 
@@ -190,6 +183,7 @@ a {
 .fa-shopping-cart {
   color: var(--main-color-blue);
   font-size: 30px;
+  margin-right: 20px;
 }
 
 .fa-shopping-cart:hover {
@@ -427,10 +421,10 @@ textarea {
   text-align: center;
 }
 
-.fa-shopping-cart span {
+.fa-shopping-cart p {
   position: absolute;
-  top: 42px;
-  right: 36px;
+  top: 29px;
+  right:72px;
   font-size: 13px;
   color: white;
 }
@@ -472,7 +466,7 @@ textarea {
   }
 }
 
-@media (min-width: 830px) {
+@media (min-width: 886px) {
   main {
     font-size: 20px;
   }
@@ -484,8 +478,14 @@ textarea {
   }
 
   nav {
-    display: block;
+    display: contents!important;
     position: static;
+    margin: 0;
+    background: #ffffff;
+    width: 0;
+    height: 0;
+
+
   }
 
   nav li {
@@ -494,11 +494,21 @@ textarea {
     vertical-align: middle;
   }
 
+  nav ul {
+    margin: 0;
+  }
+
+
   header label {
     display: none;
   }
 
   .front-section {
     min-height: 600px;
+  }
+
+  .fa-shopping-cart {
+    margin-right:65px;
+
   }
 }
