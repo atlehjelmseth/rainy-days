@@ -89,17 +89,30 @@ function specifications(jackets) {
 
 function localToHtml() {
   let localJackets = localStorage.getItem("jacketsSpecs");
+  let cartSum = localStorage.getItem('totalSum');
   localJackets = JSON.parse(localJackets);
 
-  let jacketContainer = document.querySelector(".checkout-content");
+  let jacketContainer = document.querySelector(".jackets");
 
   if(localJackets && jacketContainer) {
     jacketContainer.innerHTML = '';
     Object.values(localJackets).map(item =>{
-      jacketContainer.innerHTML += ``
-                                    
+      jacketContainer.innerHTML += `<div class="jacket">
+                                      <img src="./images/${item.tag}.png">
+                                      <div>${item.name}</div>
+                                    </div>
+                                    <div class="price-jacket">Price: $${item.price}</div>
+                                    <div class="quantity">
+                                      Quantity: ${item.numberOf}
+                                    </div>
+                                    <div class="total">
+                                      Total: ${item.numberOf * item.price}
+                                    </div>`                          
     });
+      
+
   }
+  
 }
 
 localToHtml()
@@ -108,8 +121,6 @@ numberOfProducts()
 
 function totalSum(jackets) {
   let cartSum = localStorage.getItem('totalSum');
-
-
   if(cartSum != null) {
     cartSum = parseInt(cartSum);
     localStorage.setItem("totalSum", cartSum + jackets.price);

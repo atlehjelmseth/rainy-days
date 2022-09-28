@@ -464,6 +464,27 @@ textarea {
   width: 40%;
 }
 
+.jackets {
+  display: flex;
+  flex-direction:column;
+  left: 20px;
+}
+
+.jacket {
+
+}
+
+.jacket img {
+  max-width: 200px;
+  margin: 0;
+}
+
+.price-jacket {
+  display: flex;
+}
+
+
+
 
 /* Media queries */
 
