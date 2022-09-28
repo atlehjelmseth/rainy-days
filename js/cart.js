@@ -139,5 +139,5 @@ for (let i=0; i < clearCart.length; i++) {
 
 function clearOut() {
   localStorage.clear();
-  document.querySelector('.fa-shopping-cart p').textContent = 0;
+  window.location.reload();
 }

@@ -483,8 +483,10 @@ textarea {
   display: flex;
 }
 
-
-
+.checkout-page {
+  min-height: 95vh;
+  margin-top: 100px;
+}
 
 /* Media queries */
 
