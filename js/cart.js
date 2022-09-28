@@ -107,7 +107,8 @@ function localToHtml() {
                                     </div>
                                     <div class="total">
                                       Total: ${item.numberOf * item.price}
-                                    </div>`                          
+                                    </div>
+                                    `                 
     });
       
 
