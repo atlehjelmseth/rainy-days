@@ -78,6 +78,7 @@ a:hover {
   cursor: pointer;
 }
 
+
 /* Animations - Global */
 
 @keyframes smooth {
@@ -486,10 +487,15 @@ textarea {
 .price-jacket {
   display: flex;
 }
+/* Checkout Page */
 
 .checkout-page {
   min-height: 95vh;
   margin-top: 100px;
+}
+
+.clear_cart {
+  display: block;
 }
 
 /* Media queries */
