@@ -74,6 +74,10 @@ img {
   margin-top: 100px;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /* Animations - Global */
 
 @keyframes smooth {
@@ -309,7 +313,7 @@ a {
 
 .proceed-to-checkout {
   display: block;
-  margin:  auto;
+  margin: 30px auto;
   background-color: var(--main-color-blue);
   color: #ffffff;
   font-size: 1.2em;
@@ -327,9 +331,7 @@ a {
   box-shadow: 0px 5px 10px rgb(0 0 0 / 100%);
 }
 
-.jackets-content a:hover {
-  cursor: pointer;
-}
+
 
 /* Inspiration */
 .inspiration-content {
