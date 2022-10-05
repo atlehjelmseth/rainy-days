@@ -525,42 +525,47 @@ textarea {
   margin: 20px auto;
   }
 
-  .order {
-    display: block;
-    font-family: "museo-slab", serif;
-    font-size: 1.7rem;
-    margin: auto;
-    background-color: green;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 20px;
-    padding: 20px 20px;
-    max-width: 250px;
-    text-align: center;
-    border: solid var(--main-color-blue);
-  }
+ .order {
+   display: block;
+   font-family: "museo-slab", serif;
+   font-size: 1.7rem;
+   margin: auto;
+   background-color: green;
+   color: #ffffff;
+   text-transform: uppercase;
+   border-radius: 20px;
+   padding: 20px 20px;
+   max-width: 250px;
+   text-align: center;
+   border: solid var(--main-color-blue);
+ }
 
-  .clear_cart:hover {
-    background-color: white;
-    color: var(--main-color-blue);
-  }
+ .order:hover {
+  background-color: white;
+  color: green;
+ }
 
-  .checkout_buttons{
-    margin: 40px 20px 40px 20px;
-    display: none;
-  }
+ .clear_cart:hover {
+   background-color: white;
+   color: var(--main-color-blue);
+ }
 
-  .jacket-total{
-    margin: 40px 20px 40px 20px;
-  }
+ .checkout_buttons{
+   margin: 40px 20px 40px 20px;
+   display: none;
+ }
 
-  .price-jacket {
-    font-weight: bold;
-  }
+ .jacket-total{
+   margin: 40px 20px 40px 20px;
+ }
 
-  .totalsum {
-    font-weight: bold;
-  }
+ .price-jacket {
+   font-weight: bold;
+ }
+
+ .totalsum {
+   font-weight: bold;
+ }
 
 /* Media queries */
 
