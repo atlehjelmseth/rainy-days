@@ -1,6 +1,7 @@
 const cart = document.querySelectorAll('.add_to_cart');
 const clearCart = document.querySelectorAll('.clear_cart');
-const pay = document.querySelectorAll('.pay');
+const order = document.querySelectorAll('.order');
+
 
 /* Jackets */
 
@@ -115,7 +116,7 @@ function localToHtml() {
     });
       jacketContainer.innerHTML += `<div class="totalsum"><p>Grand total: $${cartSum}</p></div>`
       buttonsContainer.style.display = "block";
-      
+
   }
   
 }
@@ -135,9 +136,9 @@ function totalSum(jackets) {
 }
 
 
-/* Pay */
-for (let i=0; i < pay.length; i++) {
-  pay[i].addEventListener('click', () => {
+/* Order */
+for (let i=0; i < order.length; i++) {
+  order[i].addEventListener('click', () => {
     clearOut()
     window.alert("Order has successfully been received");
   })
@@ -157,3 +158,5 @@ function clearOut() {
   window.location.reload();
   window.scrollTo(0, 0);
 }
+
+

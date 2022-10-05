@@ -522,7 +522,7 @@ textarea {
   margin: 20px auto;
   }
 
-  .pay {
+  .order {
     display: block;
     font-family: "museo-slab", serif;
     font-size: 1.7rem;
@@ -558,6 +558,11 @@ textarea {
   .totalsum {
     font-weight: bold;
   }
+
+.successcheckout {
+  display: none;
+}
+
 /* Media queries */
 
 @media (min-width: 600px) {
