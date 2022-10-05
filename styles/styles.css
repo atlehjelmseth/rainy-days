@@ -322,6 +322,7 @@ a {
   border-radius: 20px;
   padding: 20px 37px;
   max-width: 250px;
+  max-height: 20px;
   text-align: center;
   box-shadow: 0px 5px 10px rgb(255, 255, 255);
 }
@@ -638,5 +639,9 @@ textarea {
   .fa-shopping-cart {
     margin-right:65px;
 
+  }
+
+  .proceed-to-checkout {
+    margin: auto;
   }
 }
