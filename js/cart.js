@@ -97,7 +97,8 @@ function localToHtml() {
   if(localJackets && jacketContainer) {
     jacketContainer.innerHTML = '';
     Object.values(localJackets).map(item =>{
-      jacketContainer.innerHTML += `<div class="jacket">
+      jacketContainer.innerHTML += `<div class="jacket-total">
+                                    <div class="jacket">
                                       <img src="./images/${item.tag}.png">
                                       <div>${item.name}</div>
                                     </div>
@@ -106,9 +107,10 @@ function localToHtml() {
                                       Quantity: ${item.numberOf}
                                     </div>
                                     <div class="total">
-                                      Total: ${item.numberOf * item.price}
+                                      Total: $${item.numberOf * item.price}
                                     </div>
-                                    `                 
+                                    </div>
+                                    `              
     });
       
 
