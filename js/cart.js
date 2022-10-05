@@ -1,6 +1,6 @@
 const cart = document.querySelectorAll('.add_to_cart');
 const clearCart = document.querySelectorAll('.clear_cart');
-const checkoutButtons = document.querySelectorAll('.checkout_buttons');
+const pay = document.querySelectorAll('.pay');
 
 /* Jackets */
 
@@ -134,11 +134,20 @@ function totalSum(jackets) {
 }
 
 
+/* Pay */
+for (let i=0; i < pay.length; i++) {
+  pay[i].addEventListener('click', () => {
+    clearOut()
+    window.alert("Order has successfully been received");
+  })
+}
+
 /* Clear cart */
 
 for (let i=0; i < clearCart.length; i++) {
   clearCart[i].addEventListener('click', () => {
     clearOut()
+
   })
 }
 

@@ -407,6 +407,7 @@ textarea {
   display: none;
   color:red;
   font-size: 1rem;
+  text-align: left;
 }
 
 .success {
@@ -419,6 +420,8 @@ textarea {
 #subject {
   font-family: "verdana", serif;
 }
+
+
 
 
 /* Product page */
@@ -530,10 +533,12 @@ textarea {
     padding: 20px 20px;
     max-width: 250px;
     text-align: center;
+    border: solid var(--main-color-blue);
   }
 
   .clear_cart:hover {
     background-color: white;
+    color: var(--main-color-blue);
   }
 
   .checkout_buttons{
