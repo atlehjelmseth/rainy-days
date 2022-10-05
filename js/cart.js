@@ -1,5 +1,6 @@
 const cart = document.querySelectorAll('.add_to_cart');
 const clearCart = document.querySelectorAll('.clear_cart');
+const checkoutButtons = document.querySelectorAll('.checkout_buttons');
 
 /* Jackets */
 
@@ -112,8 +113,8 @@ function localToHtml() {
                                     </div>
                                     `              
     });
+      jacketContainer.innerHTML += `<div class="totalsum"><p>Grand total: $${cartSum}</p></div>`
       
-
   }
   
 }
@@ -131,6 +132,7 @@ function totalSum(jackets) {
     localStorage.setItem("totalSum", jackets.price);
   }
 }
+
 
 /* Clear cart */
 

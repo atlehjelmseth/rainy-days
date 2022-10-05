@@ -505,26 +505,40 @@ textarea {
   font-family: "museo-slab", serif;
   background-color: #ff8e26;
   color: var(--main-color-blue);
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 20px;
   padding: 10px 34px;
-  max-width: 210px;
+  max-width: 100px;
   max-height: 50px;
   border: var(--main-color-blue);
   border-style: solid;
   text-align: center;
-  margin: auto;
-  top: 40px;
+  margin: 20px auto;
+  }
+
+  .pay {
+    display: block;
+    font-family: "museo-slab", serif;
+    font-size: 1.7rem;
+    margin: auto;
+    background-color: green;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 20px 20px;
+    max-width: 250px;
+    text-align: center;
   }
 
   .clear_cart:hover {
     background-color: white;
   }
 
-  .space_clear_cart {
+  .checkout_buttons{
     margin: 40px 20px 40px 20px;
+    display: block;
   }
 
   .jacket-total{
@@ -535,7 +549,7 @@ textarea {
     font-weight: bold;
   }
 
-  .total {
+  .totalsum {
     font-weight: bold;
   }
 /* Media queries */
