@@ -155,4 +155,5 @@ for (let i=0; i < clearCart.length; i++) {
 function clearOut() {
   localStorage.clear();
   window.location.reload();
+  window.scrollTo(0, 0);
 }
