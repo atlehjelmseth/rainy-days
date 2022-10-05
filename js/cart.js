@@ -92,8 +92,8 @@ function localToHtml() {
   let localJackets = localStorage.getItem("jacketsSpecs");
   let cartSum = localStorage.getItem('totalSum');
   localJackets = JSON.parse(localJackets);
-
   let jacketContainer = document.querySelector(".jackets");
+  let buttonsContainer = document.querySelector(".checkout_buttons");
 
   if(localJackets && jacketContainer) {
     jacketContainer.innerHTML = '';
@@ -114,6 +114,7 @@ function localToHtml() {
                                     `              
     });
       jacketContainer.innerHTML += `<div class="totalsum"><p>Grand total: $${cartSum}</p></div>`
+      buttonsContainer.style.display = "block";
       
   }
   

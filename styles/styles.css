@@ -543,7 +543,7 @@ textarea {
 
   .checkout_buttons{
     margin: 40px 20px 40px 20px;
-    display: block;
+    display: none;
   }
 
   .jacket-total{
