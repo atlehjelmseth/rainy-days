@@ -638,8 +638,8 @@ textarea {
   }
 
 
-  header label {
-    display: none;
+  .fa-bars {
+    display: none!important;
   }
 
   .front-section {
