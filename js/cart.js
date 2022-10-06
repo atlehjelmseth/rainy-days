@@ -44,7 +44,7 @@ function numberOfProducts() {
   let jacketNumber = localStorage.getItem('cartNumber');
 
   if(jacketNumber) {
-    document.querySelector('.fa-shopping-cart p').textContent = jacketNumber;
+    document.querySelector('.amount_of_jackets').textContent = jacketNumber;
   }
 }
 
@@ -55,10 +55,10 @@ function cartNumber(jackets) {
 
   if (jacketNumber){
     localStorage.setItem('cartNumber', jacketNumber + 1);
-    document.querySelector('.fa-shopping-cart p').textContent = jacketNumber + 1;
+    document.querySelector('.amount_of_jackets').textContent = jacketNumber + 1;
   } else {
     localStorage.setItem('cartNumber', 1);
-    document.querySelector('.fa-shopping-cart p').textContent = 1;
+    document.querySelector('.amount_of_jackets').textContent = 1;
   };
 
   specifications(jackets)

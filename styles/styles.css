@@ -455,11 +455,11 @@ textarea {
   text-align: center;
 }
 
-.fa-shopping-cart p {
+.amount_of_jackets {
   position: absolute;
-  top: 29px;
+  top: 30px;
   right:72px;
-  font-size: 13px;
+  font-size: 11px;
   color: white;
 }
 

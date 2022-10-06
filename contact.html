@@ -1,116 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Contact page for RainyDays, world famous jackets"
-    />
-    <title>RainyDays | Contact Us</title>
-    <link href="https://use.typekit.net/ngi4cxq.css" rel="stylesheet" />
-    <link href="styles/styles.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/1fe0dacb52.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Hotjar Tracking Code for https://mystifying-euler-4bb0fa.netlify.app/contact.html -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3168354, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-  </head>
-  <body>
-    <header class="top">
-      <a href="index.html" class="logo">
-        <img src="images/RainyDays_Logo.png" alt="RainyDays logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact page for RainyDays, world famous jackets" />
+  <title>RainyDays | Contact Us</title>
+  <link href="https://use.typekit.net/ngi4cxq.css" rel="stylesheet" />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/1fe0dacb52.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for https://mystifying-euler-4bb0fa.netlify.app/contact.html -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = { hjid: 3168354, hjsv: 6 };
+      a = o.getElementsByTagName("head")[0];
+      r = o.createElement("script");
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+  </script>
+</head>
+
+<body>
+  <header class="top">
+    <a href="index.html" class="logo">
+      <img src="images/RainyDays_Logo.png" alt="RainyDays logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="jackets.html" class="button">jackets</a></li>
+        <li>
+          <a href="inspiration.html" class="button active">inspiration</a>
+        </li>
+        <li><a href="contact.html" class="button">contact</a></li>
+        <li></li>
+      </ul>
+    </nav>
+    <div class="cart_and_hamburger">
+      <a href="checkout.html" aria-label="shopping-cart">
+        <p class="amount_of_jackets">0</p><i class="fas fa-shopping-cart"></i>
       </a>
-      <nav>
-        <ul>
-          <li><a href="jackets.html" class="button">jackets</a></li>
-          <li>
-            <a href="inspiration.html" class="button active">inspiration</a>
-          </li>
-          <li><a href="contact.html" class="button">contact</a></li>
-          <li></li>
-        </ul>
-      </nav>
-      <div class="cart_and_hamburger">
-        <a href="checkout.html" aria-label="shopping-cart"
-          ><i class="fas fa-shopping-cart"><p>0</p></i></a
-        >
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      </div>
-    </header>
-    <main class="contact-us">
-      <h1>Contact us!</h1>
-      <div class="contact-us-content">
-        <form id="contactForm">
-          <div class="label">
-            <label>
-              <input name="name" id="name" placeholder="* Full name" />
-            </label>
-            <div class="formError" id="nameError">Please enter your name</div>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    </div>
+  </header>
+  <main class="contact-us">
+    <h1>Contact us!</h1>
+    <div class="contact-us-content">
+      <form id="contactForm">
+        <div class="label">
+          <label>
+            <input name="name" id="name" placeholder="* Full name" />
+          </label>
+          <div class="formError" id="nameError">Please enter your name</div>
+        </div>
+        <div class="label">
+          <label>
+            <input name="mobile" id="mobile" placeholder="* Mobile number" />
+          </label>
+          <div class="formError" id="mobileError">
+            Please enter your mobile number
           </div>
-          <div class="label">
-            <label>
-              <input name="mobile" id="mobile" placeholder="* Mobile number" />
-            </label>
-            <div class="formError" id="mobileError">
-              Please enter your mobile number
-            </div>
+        </div>
+        <div class="label">
+          <label>
+            <input name="email" id="email" placeholder="* Email" />
+          </label>
+          <div class="formError" id="emailError">Please enter your email</div>
+        </div>
+        <div class="label">
+          <label>
+            <textarea name="subject" id="subject" placeholder="* Please enter your message"></textarea>
+          </label>
+          <div class="formError" id="subjectError">
+            Please enter your message
           </div>
-          <div class="label">
-            <label>
-              <input name="email" id="email" placeholder="* Email" />
-            </label>
-            <div class="formError" id="emailError">Please enter your email</div>
-          </div>
-          <div class="label">
-            <label>
-              <textarea
-                name="subject"
-                id="subject"
-                placeholder="* Please enter your message"
-              ></textarea>
-            </label>
-            <div class="formError" id="subjectError">
-              Please enter your message
-            </div>
-            <p class="success">Your message is sendt!</p>
-            <button class="button-contact">Send</button>
-          </div>
-        </form>
-      </div>
-      <div class="contact-us-pictures">
-        <img
-          src="images/mountaineering-455338_1280.jpg"
-          alt="Relaxing stroll in the forest"
-        />
-        <img
-          src="images/woman-2896389_1280.jpg"
-          alt="Woman relaxing by a beatiful lake"
-        />
-      </div>
-      <p class="bottom-text">
-        Rainydays corp.<br />Konglevegen 6B, 546845 Canada<br />Tlf: 815 493
-        00<br />All rights reserved.
-      </p>
-    </main>
-    <script src="/js/contact.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/cart.js"></script>
-    <footer>Copyright &copy;</footer>
-  </body>
+          <p class="success">Your message is sendt!</p>
+          <button class="button-contact">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-us-pictures">
+      <img src="images/mountaineering-455338_1280.jpg" alt="Relaxing stroll in the forest" />
+      <img src="images/woman-2896389_1280.jpg" alt="Woman relaxing by a beatiful lake" />
+    </div>
+    <p class="bottom-text">
+      Rainydays corp.<br />Konglevegen 6B, 546845 Canada<br />Tlf: 815 493
+      00<br />All rights reserved.
+    </p>
+  </main>
+  <script src="/js/contact.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/cart.js"></script>
+  <footer>Copyright &copy;</footer>
+</body>
+
 </html>
