@@ -38,6 +38,7 @@ header {
   box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
   z-index: 1;
   background-color: #ffffff;
+  height: 100px;
 }
 
 header img {
@@ -212,6 +213,14 @@ a {
   background-color: #ffffff;
   color: var(--main-color-blue);
   cursor: pointer;
+}
+
+.amount_of_jackets {
+  position: absolute;
+  top: 28px;
+  right:72px;
+  font-size: 11px;
+  color: white;
 }
 
 /* Home page */
@@ -453,14 +462,6 @@ textarea {
   border-style: solid;
   width: 150px;
   text-align: center;
-}
-
-.amount_of_jackets {
-  position: absolute;
-  top: 30px;
-  right:72px;
-  font-size: 11px;
-  color: white;
 }
 
 .product-header {
