@@ -573,7 +573,6 @@ textarea {
 
 @media (min-width: 600px) {
   h1,
-  h2,
   .bottom-text {
     grid-column: -1/1;
   }
