@@ -190,6 +190,7 @@ a {
   color: var(--main-color-blue);
   font-size: 30px;
   margin-right: 20px;
+  display: none!;
 }
 
 .fa-shopping-cart:hover {
