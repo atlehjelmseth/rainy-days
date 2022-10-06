@@ -425,6 +425,7 @@ textarea {
   color:red;
   font-size: 1rem;
   text-align: left;
+  margin-left: 15px;
 }
 
 .success {
