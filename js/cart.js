@@ -91,6 +91,17 @@ function specifications(jackets) {
   localStorage.setItem('jacketsSpecs', jacketSpecs);
 }
 
+function totalSum(jackets) {
+  let cartSum = localStorage.getItem('totalSum');
+  if(cartSum != null) {
+    cartSum = parseInt(cartSum);
+    localStorage.setItem("totalSum", cartSum + jackets.price);
+  }else {
+    localStorage.setItem("totalSum", jackets.price);
+  }
+}
+
+
 /* From localstorage to HTML */
 
 function localToHtml() {
@@ -127,17 +138,6 @@ function localToHtml() {
 
 localToHtml()
 
-
-
-function totalSum(jackets) {
-  let cartSum = localStorage.getItem('totalSum');
-  if(cartSum != null) {
-    cartSum = parseInt(cartSum);
-    localStorage.setItem("totalSum", cartSum + jackets.price);
-  }else {
-    localStorage.setItem("totalSum", jackets.price);
-  }
-}
 
 
 /* Order */
