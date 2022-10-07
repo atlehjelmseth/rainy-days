@@ -234,7 +234,7 @@ a {
 
 .front-section {
   background-image: url(/images/front_image.jpg);
-  background-position: right bottom;
+  background-position: right;
   background-size: cover;
 
   min-height: 300px;
