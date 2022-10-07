@@ -45,8 +45,6 @@ function validateForm() {
 }
 
 
-
-
 form.addEventListener("submit", validateForm)
 
 function checkLength(value, len) {
