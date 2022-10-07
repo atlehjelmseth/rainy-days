@@ -48,6 +48,8 @@ function numberOfProducts() {
   }
 }
 
+numberOfProducts()
+
 function cartNumber(jackets) {
   let jacketNumber = localStorage.getItem('cartNumber');
 
@@ -89,6 +91,8 @@ function specifications(jackets) {
   localStorage.setItem('jacketsSpecs', jacketSpecs);
 }
 
+/* From localstorage to HTML */
+
 function localToHtml() {
   let localJackets = localStorage.getItem("jacketsSpecs");
   let cartSum = localStorage.getItem('totalSum');
@@ -122,7 +126,7 @@ function localToHtml() {
 }
 
 localToHtml()
-numberOfProducts()
+
 
 
 function totalSum(jackets) {
