@@ -3,7 +3,7 @@ const clearCart = document.querySelectorAll('.clear_cart');
 const order = document.querySelectorAll('.order');
 
 
-/* Jackets */
+/* Jackets array */
 
 const jackets = [
   {
