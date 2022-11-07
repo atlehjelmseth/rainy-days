@@ -270,16 +270,47 @@ a {
 /* Jackets */
 
 .jackets-content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-gap: 20px;
   padding: 10px;
 }
 
+
+
+.jacket-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.jacket-container p {
+  margin: 10px;
+}
+
 .products {
-  position: relative;
   text-align: center;
-  color: white;
-  background-color: whitesmoke;
+}
+
+.products img {
+  width: 100%;
+}
+
+.more_info {
+  display: block;
+  margin: 10px auto;
+  background-color: green;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 20px 37px;
+  max-width: 250px;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
 }
 
 .jacket-pictures {
@@ -311,7 +342,8 @@ a {
 
 .price {
   font-weight: bold;
-  color: greenyellow;
+  color: green;
+  font-size: 2rem;
 }
 
 .old-price {
@@ -494,6 +526,13 @@ textarea {
 .jacket img {
   max-width: 200px;
   margin: 0;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 

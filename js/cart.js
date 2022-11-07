@@ -2,6 +2,40 @@ const cart = document.querySelectorAll('.add_to_cart');
 const clearCart = document.querySelectorAll('.clear_cart');
 const order = document.querySelectorAll('.order');
 
+/* Fetch from rest API */
+
+const url = "https://rainydays.eltprod.no/wp-json/wc/store/products";
+
+const jacketsApi = document.querySelector(".products");
+
+async function JacketsApiFunction() {
+  try{ const response = await fetch(url);
+    const results = await response.json();
+    
+    console.log(results)
+
+    jacketsApi.innerHTML = "";
+         
+    for(let i = 0; i < results.length; i++) {
+
+      
+      jacketsApi.innerHTML += `<div class="jacket-container">
+                                <img src="${results[i].images[0].src}" alt="${results[i].images[0].alt}"></a>
+                                  <p>${results[i].name}</p>
+                                  <p class="price">${results[i].prices.price}$</p>
+                                  <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a> 
+                                  </div>`;
+    }
+    console.log()
+   }catch (error) {
+     jacketsApi.innerHTML = "Unable to connect to the API";
+ }
+}
+
+JacketsApiFunction()
+
+
+
 
 /* Jackets array */
 
