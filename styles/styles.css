@@ -288,6 +288,11 @@ a {
   margin: 10px;
 }
 
+.jacket-container img {
+  height: 100%;
+  width: 100%;
+}
+
 
 .products {
   text-align: center;
