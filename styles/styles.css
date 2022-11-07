@@ -276,8 +276,6 @@ a {
   padding: 10px;
 }
 
-
-
 .jacket-container {
   display: flex;
   flex-direction: column;
@@ -290,11 +288,10 @@ a {
   margin: 10px;
 }
 
+
 .products {
   text-align: center;
 }
-
-
 
 .more_info {
   display: block;
