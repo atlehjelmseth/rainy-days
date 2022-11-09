@@ -12,8 +12,6 @@ async function JacketsApiFunction() {
   try{ const response = await fetch(url);
     const results = await response.json();
     
-    console.log(results)
-
     jacketsApi.innerHTML = "";
          
     for(let i = 0; i < results.length; i++) {
@@ -26,9 +24,8 @@ async function JacketsApiFunction() {
                                   <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a> 
                                   </div>`;
     }
-    console.log()
    }catch (error) {
-     jacketsApi.innerHTML = "Unable to connect to the API";
+    jackets.innerHTML = "Unable to connect to the API";
  }
 }
 
