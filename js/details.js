@@ -1,6 +1,8 @@
 const urlDetails = "https://rainydays.eltprod.no/wp-json/wc/store/products";
 
-const spesifications = document.querySelector(".jacketDetails");
+const spesifications = document.querySelector(".jacket-details");
+const jacketName = document.querySelector(".jacket-title");
+const cartButton = document.querySelector(".cart_button");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -15,18 +17,27 @@ console.log(urlJackets);
 
 async function jacketSpecs() {
   try {const response = await fetch(urlJackets);
-       const results = await response.json();
+       const resultsSpec = await response.json();
     
-      console.log(results)
-
+      console.log(resultsSpec)
+     
       spesifications.innerHTML = "";
+      jacketName.innerHTML = "";
 
-      spesifications.innerHTML += `<h1>${results[i].name}</h1>`;
+      spesifications.innerHTML += `<img src="${resultsSpec.images[0].src}" alt="${resultsSpec.images[0].alt}">
+                                  <div>${resultsSpec.description}</div>
+                                  <p class="price">${resultsSpec.prices.price}$</p>
+                                  `;
 
-      
+      jacketName.innerHTML = `${resultsSpec.name}`
+
       }catch (error) {
         spesifications.innerHTML = "Unable to connect to the API";
+        cartButton.style.display = "none";
     }
    }
 
    jacketSpecs()
+
+
+   

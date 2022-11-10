@@ -2,72 +2,11 @@ const cart = document.querySelectorAll('.add_to_cart');
 const clearCart = document.querySelectorAll('.clear_cart');
 const order = document.querySelectorAll('.order');
 
-/* Fetch from rest API */
-
-const url = "https://rainydays.eltprod.no/wp-json/wc/store/products";
-
-const jacketsApi = document.querySelector(".products");
-
-async function JacketsApiFunction() {
-  try{ const response = await fetch(url);
-    const results = await response.json();
-    
-    jacketsApi.innerHTML = "";
-         
-    for(let i = 0; i < results.length; i++) {
-
-      
-      jacketsApi.innerHTML += `<div class="jacket-container">
-                                <img src="${results[i].images[0].src}" alt="${results[i].images[0].alt}"></a>
-                                  <p>${results[i].name}</p>
-                                  <p class="price">${results[i].prices.price}$</p>
-                                  <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a> 
-                                  </div>`;
-    }
-   }catch (error) {
-    jackets.innerHTML = "Unable to connect to the API";
- }
-}
-
-JacketsApiFunction()
-
-
-
-
-/* Jackets array */
-
-const jackets = [
-  {
-    name: 'Grey jacket',
-    tag: 'greyjacket',
-    price: 299,
-    numberOf: 0
-  },
-  {
-    name: 'Red jacket',
-    tag: 'redjacket',
-    price: 199,
-    numberOf: 0
-  },
-  {
-    name: 'Blue jacket',
-    tag: 'bluejacket',
-    price: 299,
-    numberOf: 0
-  },
-  {
-    name: 'Yellow jacket',
-    tag: 'yellowjacket',
-    price: 299,
-    numberOf: 0
-  },
-]
-
 /* Add to cart */
 for (let i=0; i < cart.length; i++) {
   cart[i].addEventListener('click', () => {
-    cartNumber(jackets[i]);
-    totalSum(jackets[i])
+    cartNumber(jacketsApiNumbers[i]);
+    totalSum(jacketsApiPrice[i])
   })
 }
 
@@ -126,9 +65,9 @@ function totalSum(jackets) {
   let cartSum = localStorage.getItem('totalSum');
   if(cartSum != null) {
     cartSum = parseInt(cartSum);
-    localStorage.setItem("totalSum", cartSum + jackets.price);
+    localStorage.setItem("totalSum", cartSum + jacketsApiPrice);
   }else {
-    localStorage.setItem("totalSum", jackets.price);
+    localStorage.setItem("totalSum", jacketsApiPrice);
   }
 }
 

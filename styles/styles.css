@@ -288,9 +288,7 @@ a {
   margin: 10px;
 }
 
-.jacket-container img {
-  max-width: 300px;
-}
+
 
 
 .products {
@@ -476,8 +474,11 @@ textarea {
 /* Product page */
 
 .productpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
-  margin-top: 100px;
+  min-height: 90vh;
 }
 
 .price-cta-section p {
@@ -510,9 +511,6 @@ textarea {
   margin: 15px ;
 }
 
-.jacket-title {
-  width: 40%;
-}
 
 .jackets {
   display: flex;
@@ -532,6 +530,20 @@ textarea {
   width: 100%;
   background-size: cover;
   border-radius: 10px;
+}
+
+.jacket-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.jacket-details img {
+  max-width: 800px;
+}
+
+.jacket-title {
+  margin-top: 100px;
 }
 
 
@@ -640,11 +652,6 @@ textarea {
     max-width: 470px;
   }
 
-  .productpage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 90vh;
-  }
 }
 
 @media (min-width: 886px) {
