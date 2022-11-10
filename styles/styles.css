@@ -288,7 +288,10 @@ a {
   margin: 10px;
 }
 
-
+.sale_price {
+  color: red;
+  text-decoration: line-through;
+} 
 
 
 .products {
@@ -476,9 +479,8 @@ textarea {
 .productpage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 20px;
-  min-height: 90vh;
+  min-height: 95vh;
 }
 
 .price-cta-section p {
