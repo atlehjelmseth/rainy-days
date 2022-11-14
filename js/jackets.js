@@ -41,7 +41,7 @@ async function JacketsApiFunction() {
                                       }
                                   )
                                   console.log(results)
-                                  jacketsApi.innerHTML = `Test`;
+                                  jacketsApi.innerHTML += `Test`;
                                 })
                               
   }catch (error) {
