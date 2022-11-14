@@ -22,8 +22,6 @@ async function JacketsApiFunction() {
                                   <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a>
                                   </div>`;
 
-                                  // console.log(results.name)
-                                  // let jacketPrices = results[i].prices.price;
 
                                 }
                                 document.querySelector('.low-high').addEventListener("click", function(){
@@ -38,9 +36,11 @@ async function JacketsApiFunction() {
                                           else {
                                               return 0;
                                           }
+                                          
                                       }
+                                      
                                   )
-                                  console.log(results)
+                                  console.log(results[0].name)
                                   jacketsApi.innerHTML += `Test`;
                                 })
                               
