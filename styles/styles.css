@@ -294,7 +294,7 @@ a {
 
 .jacket-container img {
   width: 100%;
-  height: 100%;
+  height: auto!important;
 }
 .sale_price {
   color: red;
