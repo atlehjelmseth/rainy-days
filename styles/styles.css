@@ -390,9 +390,14 @@ a {
   margin-top: 0;
 }
 
-.buttonscontainer button {
-  padding: 20px 20px 20px 20px;
-  margin: 0px 10px 0px 10px;
+.low-high,
+.high-low,
+.alfabetical {
+  padding: 15px 15px 15px 15px;
+  margin: 0px 6px 0px 6px;
+  font-size: 1rem;
+  background-color: var(--main-color-blue);
+  color: white;
 }
 
 /* Inspiration */
