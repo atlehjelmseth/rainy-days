@@ -284,8 +284,8 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  margin: auto;
-  padding: 60px 30px 60px 30px;
+  margin: 60px auto;
+
 }
 
 .jacket-container p {
@@ -293,8 +293,7 @@ a {
 }
 
 .jacket-container img {
-  max-width: 100%!important;
-  height: auto!important;
+  width: 100%;
 }
 .sale_price {
   color: red;
