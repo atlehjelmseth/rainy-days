@@ -386,6 +386,10 @@ a {
   margin-top: 0;
 }
 
+.buttonscontainer button {
+  padding: 10px 10px 10px 10px;
+  margin: 0px 10px 0px 10px;
+}
 
 /* Inspiration */
 .inspiration-content {
