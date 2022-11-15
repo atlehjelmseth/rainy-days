@@ -1,4 +1,3 @@
-
 /* Fetch from rest API */
 
 const url = "https://rainydays.eltprod.no/wp-json/wc/store/products";
@@ -118,7 +117,6 @@ async function JacketsApiFunction() {
                               
   }catch (error) {
     jacketsApi.innerHTML = "Unable to connect to the API";
-    console.log("this works")
   }
 
 }
