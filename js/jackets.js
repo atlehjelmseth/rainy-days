@@ -24,7 +24,10 @@ async function JacketsApiFunction() {
 
 
                                 }
-                                document.querySelector('.low-high').addEventListener("click", function(){
+                                
+                                document.querySelector('.alfabetical').addEventListener("click", function(){
+                                  jacketsApi.innerHTML = "";
+                                  for(let i = 0; i < results.length; i++){
                                   results.sort(                                    
                                       function(a,b){
                                           if(a.name > b.name){
@@ -40,8 +43,77 @@ async function JacketsApiFunction() {
                                       }
                                       
                                   )
-                                  console.log(results[0].name)
-                                  jacketsApi.innerHTML += `Test`;
+                                  
+                                  
+                                  let name = results[i].name;
+                                  console.log(name);                         
+                                    jacketsApi.innerHTML += `<div class="jacket-container">
+                                    <img src="${results[i].images[0].src}" alt="${results[i].images[0].alt}">
+                                      <p>${results[i].name}</p>
+                                      <p class="price">${results[i].prices.price}$</p>
+                                      <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a>
+                                      </div>`;
+                                }
+                                })
+                                document.querySelector('.high-low').addEventListener("click", function(){
+                                  jacketsApi.innerHTML = "";
+                                  for(let i = 0; i < results.length; i++){
+                                  results.sort(                                    
+                                      function(a,b){
+                                          if(a.prices.price < b.prices.price){
+                                              return 1;
+                                          }
+                                          else if(a.prices.price > b.prices.price){
+                                              return -1;
+                                          }
+                                          else {
+                                              return 0;
+                                          }
+                                          
+                                      }
+                                      
+                                  )
+                                  
+                                  
+                                  let name = results[i].name;
+                                  console.log(name);                         
+                                    jacketsApi.innerHTML += `<div class="jacket-container">
+                                    <img src="${results[i].images[0].src}" alt="${results[i].images[0].alt}">
+                                      <p>${results[i].name}</p>
+                                      <p class="price">${results[i].prices.price}$</p>
+                                      <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a>
+                                      </div>`;
+                                }
+                                })
+                                document.querySelector('.low-high').addEventListener("click", function(){
+                                  jacketsApi.innerHTML = "";
+                                  for(let i = 0; i < results.length; i++){
+                                  results.sort(                                    
+                                      function(a,b){
+                                          if(a.prices.price > b.prices.price){
+                                              return 1;
+                                          }
+                                          else if(a.prices.price < b.prices.price){
+                                              return -1;
+                                          }
+                                          else {
+                                              return 0;
+                                          }
+                                          
+                                      }
+                                      
+                                  )
+                                  
+                                  
+                                  let name = results[i].name;
+                                  console.log(name);                         
+                                    jacketsApi.innerHTML += `<div class="jacket-container">
+                                    <img src="${results[i].images[0].src}" alt="${results[i].images[0].alt}">
+                                      <p>${results[i].name}</p>
+                                      <p class="price">${results[i].prices.price}$</p>
+                                      <a href="productpage.html?id=${results[i].id}" class="more_info">Get more info</a>
+                                      </div>`;
+                                }
                                 })
                               
   }catch (error) {
