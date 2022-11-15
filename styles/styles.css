@@ -293,7 +293,7 @@ a {
 }
 
 .jacket-container img {
-  width: 100%;
+  max-width: 100%!important;
   height: auto!important;
 }
 .sale_price {
