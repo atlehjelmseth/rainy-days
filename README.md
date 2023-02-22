@@ -2,7 +2,6 @@
 
 ![image](https://github.com/atlehjelmseth/rainy-days/blob/main/RainyDays.png)
 
-A simple overview of the use/purpose of the project.
 
 ## Description
 
