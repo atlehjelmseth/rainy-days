@@ -1,6 +1,6 @@
 # Rainy Days
 
-![image](https://github.com/atlehjelmseth/rainy-days/blob/main/RainyDays.png)
+![image](https://github.com/atlehjelmseth/atlehjelmseth/blob/main/images/RainyDays.png)
 
 
 ## Description
